@@ -1,0 +1,10 @@
+{
+  "name": "face-server-new",
+  "version": "1.0.0",
+  "description": "Face++ comparison server for Gumshuda Mila",
+  "main": "api/compare.js",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0"
+  }
+}
