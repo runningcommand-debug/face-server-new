@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ success: false, error: 'No token' });
   }
 
-  const secret = '6Lex7IssAAAAAHdYTJHpzkdkKWdU-6srqNwwa4JQ';
+  const secret = process.env.RECAPTCHA_SECRET;
 
   try {
     const response = await fetch(
