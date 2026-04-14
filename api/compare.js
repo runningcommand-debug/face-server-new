@@ -1,7 +1,7 @@
 const axios = require('axios');
 const FormData = require('form-data');
 
-// 11 Face++ API Keys — Auto Rotate
+// 14 Face++ API Keys — Auto Rotate
 const FACEPP_KEYS = [
   { key: '5_LTM97SZR4psSW5uJmelX66TvHjvT3X', secret: 'bFlVMyhmuNdw8R7FKiu49s-5S82B2FnH' },
   { key: 'Px5XFD780ms_LyhqYFDwtAdEE7acyG67', secret: 'i_51i3D7FgruSn6eqgk8ROXMc_saXKsh' },
@@ -14,6 +14,9 @@ const FACEPP_KEYS = [
   { key: '1VkD_a2hISGjCfLtPAsXwqcCahtuIGyB', secret: 'vrW8wZQOl41fRiwysveNL81C0VJxjldp' },
   { key: 'R79hEfEYbFEsjtQilgIJX8B9kuuyYT0-', secret: 'uBfHdebRk_V-STGUZCqMtD3hbUqJAgBR' },
   { key: 'bgoVbMQ4l9rtL2KJP_wOgFlmZpPqJSJQ', secret: 'nn9aOe0NSr7eDznjNN7gCYQsFXoUv2vl' },
+  { key: 'mYoHWGnXz0laU3zn3tlbhrBDoF9HR37i', secret: 'NC8wxtkuOA4kQ0PdhW8hWBgME_cDQVy1' },
+  { key: 'SGEedggjRmS3qZYQok1RS7uAbT34m6hB', secret: 'UgVxmdn1xyXXmySWXqqo1KjSEJBy6NlT' },
+  { key: 'Qzc099-is5mCYIz6BzYZO3Mclj-q1yD1', secret: 'vW1PUJOOe-YoD_Ak6e8PDBI2SIB3suWJ' },
 ];
 
 let currentKeyIndex = 0;
