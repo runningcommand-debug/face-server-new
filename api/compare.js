@@ -46,7 +46,7 @@ module.exports = async (req, res) => {
         form.append('image_base64_2', image2);
 
         const response = await axios.post(
-          'https://api-cn.faceplusplus.com/facepp/v3/compare',
+          'https://api-us.faceplusplus.com/facepp/v3/compare',
           form,
           { headers: form.getHeaders() }
         );
@@ -60,7 +60,7 @@ module.exports = async (req, res) => {
 
       } catch (err) {
         const errData = err.response?.data;
-        if (errData && (errData.error_message === 'CONCURRENCY_LIMIT_EXCEEDED' || errData.error_message === 'RATE_LIMIT_EXCEEDED' || errData.error_message === 'AUTHORIZATION_ERROR' || errData.error_message === 'MONTHLY_API_CALL_EXCEEDED')) {
+        if (errData && (errData.error_message === 'CONCURRENCY_LIMIT_EXCEEDED' || errData.error_message === 'RATE_LIMIT_EXCEEDED' || errData.error_message === 'AUTHORIZATION_ERROR')) {
           lastError = errData;
           continue;
         }
@@ -75,5 +75,4 @@ module.exports = async (req, res) => {
     res.status(500).json({ error: 'Face comparison failed', details: msg });
   }
 };
-
-    
+  
