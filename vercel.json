@@ -1,4 +1,17 @@
 {
+  "version": 2,
+  "public": true,
+  "outputDirectory": ".",
+  "routes": [
+    {
+      "src": "/weights/(.*)",
+      "dest": "/weights/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
