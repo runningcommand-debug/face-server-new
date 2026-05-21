@@ -6,6 +6,10 @@
     {
       "src": "/weights/(.*)",
       "dest": "/weights/$1"
+    },
+    {
+      "src": "/logo.png",
+      "dest": "/logo.png"
     }
   ]
 }
